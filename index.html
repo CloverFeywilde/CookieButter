@@ -1,0 +1,27 @@
+<!--
+    CookieButter Visual Novel Template
+    ~a delicious spreadable base for your home baked VNs~
+
+    baked with love by: Snow & Clover
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CookieButter - Visual Novel</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <script src="pixi.min.js"></script>
+    <script type="module" src="butter.js"></script>
+    <script>
+        console.log(PIXI);
+        let type = "WebGL";
+        if (!PIXI.utils.isWebGLSupported()) {
+            type = "canvas";
+        }
+        PIXI.utils.sayHello(type);
+    </script>
+</body>
+</html>
